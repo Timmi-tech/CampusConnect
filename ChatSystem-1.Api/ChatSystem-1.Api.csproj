@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ChatSystem_1.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design"    Version="9.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChatSystem-1.Application\ChatSystem-1.Application.csproj" />
+    <ProjectReference Include="..\ChatSystem-1.Infrastructure\ChatSystem-1.Infrastructure.csproj" />
+    <ProjectReference Include="..\ChatSystem-1.Extensions\ChatSystem-1.Extensions.csproj" />
+    <ProjectReference Include="..\ChatSystem-1.Domain\ChatSystem-1.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,61 @@
+2025-05-19 11:46:34.789 +01:00 [INF] Application is shutting down...
+2025-05-19 12:53:34.812 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-19 12:53:34.882 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 12:53:34.887 +01:00 [INF] Hosting environment: Development
+2025-05-19 12:53:34.892 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-19 12:53:39.367 +01:00 [INF] Application is shutting down...
+2025-05-19 12:54:44.257 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-19 12:54:44.324 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 12:54:44.333 +01:00 [INF] Hosting environment: Development
+2025-05-19 12:54:44.338 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-19 12:55:01.551 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-19 12:55:02.224 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 680.4781ms
+2025-05-19 12:55:03.586 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-19 12:55:03.629 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-19 12:55:03.889 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 304.4733ms
+2025-05-19 12:55:08.446 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/throw - null null
+2025-05-19 12:55:09.051 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-19 12:55:09.096 +01:00 [INF] Executing endpoint 'HTTP: GET /throw'
+2025-05-19 12:55:09.109 +01:00 [INF] Executed endpoint 'HTTP: GET /throw'
+2025-05-19 12:55:09.119 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: This is a test exception!
+   at Program.<>c.<<Main>$>b__0_0() in C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api\Program.cs:line 44
+   at lambda_method2(Closure, Object, HttpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-19 12:55:09.235 +01:00 [ERR] Exception: Exception - This is a test exception!
+2025-05-19 12:55:09.305 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/throw - 500 null application/json; charset=utf-8 859.1456ms
+2025-05-19 12:56:29.198 +01:00 [INF] Application is shutting down...
+2025-05-19 12:56:36.458 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-19 12:56:37.108 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 12:56:37.360 +01:00 [INF] Hosting environment: Development
+2025-05-19 12:56:38.136 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-19 12:56:44.882 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/throw - null null
+2025-05-19 12:56:45.178 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-19 12:56:45.191 +01:00 [INF] Executing endpoint 'HTTP: GET /throw'
+2025-05-19 12:56:45.201 +01:00 [INF] Executed endpoint 'HTTP: GET /throw'
+2025-05-19 12:56:45.217 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: This is a test exception!
+   at Program.<>c.<<Main>$>b__0_0() in C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api\Program.cs:line 44
+   at lambda_method2(Closure, Object, HttpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-19 12:56:45.265 +01:00 [ERR] Exception: Exception - This is a test exception!
+2025-05-19 12:56:45.364 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/throw - 500 null application/json; charset=utf-8 486.6601ms
+2025-05-19 13:09:13.873 +01:00 [INF] Application is shutting down...
+2025-05-19 13:56:20.474 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-19 13:56:20.647 +01:00 [INF] Creating key {92cfa8f9-2cc2-4894-9d15-e1473b426bff} with creation date 2025-05-19 12:56:20Z, activation date 2025-05-19 12:56:20Z, and expiration date 2025-08-17 12:56:20Z.
+2025-05-19 13:56:20.681 +01:00 [INF] Writing data to file 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys\key-92cfa8f9-2cc2-4894-9d15-e1473b426bff.xml'.
+2025-05-19 13:56:20.950 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-19 13:56:21.024 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-19 13:56:21.042 +01:00 [INF] Hosting environment: Development
+2025-05-19 13:56:21.092 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-19 13:58:40.327 +01:00 [INF] Application is shutting down...

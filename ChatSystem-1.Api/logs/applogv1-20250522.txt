@@ -1,0 +1,345 @@
+2025-05-22 08:58:30.196 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 08:58:30.390 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 08:58:30.397 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 08:58:30.400 +01:00 [INF] Hosting environment: Development
+2025-05-22 08:58:30.403 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 08:58:57.356 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger - null null
+2025-05-22 08:58:57.425 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger - 301 0 null 70.5591ms
+2025-05-22 08:58:57.453 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-22 08:58:57.676 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 222.8148ms
+2025-05-22 08:58:57.813 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui.css - null null
+2025-05-22 08:58:57.817 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-bundle.js - null null
+2025-05-22 08:58:57.830 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-22 08:58:57.910 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-22 08:58:57.921 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-22 08:58:57.910 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-22 08:58:57.975 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 145.7977ms
+2025-05-22 08:58:57.999 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 181.8243ms
+2025-05-22 08:58:58.001 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui.css - 200 152034 text/css 187.7692ms
+2025-05-22 08:58:59.082 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/favicon-32x32.png - null null
+2025-05-22 08:58:59.107 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-22 08:58:59.118 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/favicon-32x32.png - 200 628 image/png 35.7748ms
+2025-05-22 08:59:00.155 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-22 08:59:00.184 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-22 08:59:00.222 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.7068ms
+2025-05-22 09:00:10.709 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 0
+2025-05-22 09:00:10.719 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 09:00:10.738 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 404 0 null 28.6943ms
+2025-05-22 09:00:10.757 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5199/api/authentication, Response status code: 404
+2025-05-22 09:00:13.352 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 0
+2025-05-22 09:00:13.376 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 404 0 null 23.5375ms
+2025-05-22 09:00:13.389 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5199/api/authentication, Response status code: 404
+2025-05-22 09:01:32.826 +01:00 [INF] Application is shutting down...
+2025-05-22 09:01:40.848 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 09:01:41.034 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 09:01:41.043 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 09:01:41.049 +01:00 [INF] Hosting environment: Development
+2025-05-22 09:01:41.052 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 09:01:44.182 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-22 09:01:44.291 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 109.5139ms
+2025-05-22 09:01:45.915 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-22 09:01:46.395 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 480.5561ms
+2025-05-22 09:03:59.773 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 09:03:59.793 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 09:03:59.798 +01:00 [INF] CORS policy execution successful.
+2025-05-22 09:03:59.857 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:03:59.916 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 09:04:01.224 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 1289.3615ms
+2025-05-22 09:04:01.230 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:04:01.236 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegistrationDto -> User
+ChatSystem_1.Application.DTOs.UserForRegistrationDto -> ChatSystem_1.Domain.Entities.Models.User
+   at lambda_method18(Closure, Object, User, ResolutionContext)
+   at ChatSystem_1.Application.Services.AuthenticationService.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\AuthenticationService.cs:line 29
+   at ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api\Controllers\AuthenticationControllers.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-22 09:04:01.311 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegistrationDto -> User
+ChatSystem_1.Application.DTOs.UserForRegistrationDto -> ChatSystem_1.Domain.Entities.Models.User
+2025-05-22 09:04:01.368 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 500 null application/json; charset=utf-8 1594.3917ms
+2025-05-22 09:08:15.876 +01:00 [INF] Application is shutting down...
+2025-05-22 09:08:26.015 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 09:08:26.263 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 09:08:26.273 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 09:08:26.299 +01:00 [INF] Hosting environment: Development
+2025-05-22 09:08:26.303 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 09:08:33.127 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 09:08:33.201 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 09:08:33.209 +01:00 [INF] CORS policy execution successful.
+2025-05-22 09:08:33.289 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:08:33.365 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 09:08:34.309 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 929.4272ms
+2025-05-22 09:08:34.327 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:08:34.339 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegistrationDto -> User
+ChatSystem_1.Application.DTOs.UserForRegistrationDto -> ChatSystem_1.Domain.Entities.Models.User
+   at lambda_method18(Closure, Object, User, ResolutionContext)
+   at ChatSystem_1.Application.Services.AuthenticationService.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\AuthenticationService.cs:line 29
+   at ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api\Controllers\AuthenticationControllers.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-22 09:08:34.467 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegistrationDto -> User
+ChatSystem_1.Application.DTOs.UserForRegistrationDto -> ChatSystem_1.Domain.Entities.Models.User
+2025-05-22 09:08:34.594 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 500 null application/json; charset=utf-8 1469.3948ms
+2025-05-22 09:08:41.848 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 09:08:41.879 +01:00 [INF] CORS policy execution successful.
+2025-05-22 09:08:41.886 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:08:41.893 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 09:08:41.954 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 36.961ms
+2025-05-22 09:08:42.046 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:08:42.060 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegistrationDto -> User
+ChatSystem_1.Application.DTOs.UserForRegistrationDto -> ChatSystem_1.Domain.Entities.Models.User
+   at lambda_method18(Closure, Object, User, ResolutionContext)
+   at ChatSystem_1.Application.Services.AuthenticationService.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\AuthenticationService.cs:line 29
+   at ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api\Controllers\AuthenticationControllers.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-22 09:08:42.160 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserForRegistrationDto -> User
+ChatSystem_1.Application.DTOs.UserForRegistrationDto -> ChatSystem_1.Domain.Entities.Models.User
+2025-05-22 09:08:42.169 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 500 null application/json; charset=utf-8 321.805ms
+2025-05-22 09:09:15.580 +01:00 [INF] Application is shutting down...
+2025-05-22 09:10:19.426 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 09:10:19.647 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 09:10:19.667 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 09:10:19.673 +01:00 [INF] Hosting environment: Development
+2025-05-22 09:10:19.678 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 09:10:23.254 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 09:10:23.326 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 09:10:23.334 +01:00 [INF] CORS policy execution successful.
+2025-05-22 09:10:23.402 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:10:23.464 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 09:10:28.271 +01:00 [INF] Executed DbCommand (254ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-22 09:10:28.394 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 09:10:29.129 +01:00 [INF] Executed DbCommand (35ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?' (DbType = Int32), @p10='?', @p11='?', @p12='?', @p13='?', @p14='?' (DbType = Boolean), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "MatricNumber", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-05-22 09:10:29.190 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-05-22 09:10:29.212 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 5712.9869ms
+2025-05-22 09:10:29.228 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 09:10:29.272 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 201 0 null 6021.9435ms
+2025-05-22 10:01:42.150 +01:00 [INF] Application is shutting down...
+2025-05-22 10:03:21.897 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 10:03:25.749 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 10:03:25.759 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 10:03:25.764 +01:00 [INF] Hosting environment: Development
+2025-05-22 10:03:25.769 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 10:03:52.044 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 10:03:52.126 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 10:03:52.138 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:03:52.201 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:03:52.276 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:03:57.009 +01:00 [INF] Executed DbCommand (111ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 10:03:57.384 +01:00 [WRN] Registration attempt with existing email: tom@gmail.com
+2025-05-22 10:03:57.408 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 5110.7957ms
+2025-05-22 10:03:57.422 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:03:57.436 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'key')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary.TryAddModelError(String key, String errorMessage)
+   at ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api\Controllers\AuthenticationControllers.cs:line 30
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-22 10:03:57.527 +01:00 [ERR] Exception: ArgumentNullException - Value cannot be null. (Parameter 'key')
+2025-05-22 10:03:57.663 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 500 null application/json; charset=utf-8 5622.5801ms
+2025-05-22 10:10:33.286 +01:00 [INF] Application is shutting down...
+2025-05-22 10:10:45.131 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 10:10:45.364 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 10:10:45.376 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 10:10:45.382 +01:00 [INF] Hosting environment: Development
+2025-05-22 10:10:45.386 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 10:10:50.264 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 10:10:50.321 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 10:10:50.327 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:10:50.397 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:10:50.556 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:10:54.939 +01:00 [INF] Executed DbCommand (109ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-22 10:10:55.265 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 10:10:55.330 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-05-22 10:10:55.405 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 4820.0048ms
+2025-05-22 10:10:55.413 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:10:55.444 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/json; charset=utf-8 5182.1428ms
+2025-05-22 10:12:08.381 +01:00 [INF] Application is shutting down...
+2025-05-22 10:12:17.817 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 10:12:18.349 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 10:12:18.361 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 10:12:18.366 +01:00 [INF] Hosting environment: Development
+2025-05-22 10:12:18.371 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 10:12:20.886 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 10:12:20.934 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 10:12:20.939 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:12:21.010 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:12:21.093 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:12:24.766 +01:00 [INF] Executed DbCommand (127ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 10:12:25.049 +01:00 [WRN] Registration attempt with existing email: tom@gmail.com
+2025-05-22 10:12:25.084 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.SerializableError'.
+2025-05-22 10:12:25.216 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 4096.6285ms
+2025-05-22 10:12:25.231 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:12:25.266 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/json; charset=utf-8 4381.9019ms
+2025-05-22 10:12:52.039 +01:00 [INF] Application is shutting down...
+2025-05-22 10:13:00.429 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 10:13:00.630 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 10:13:00.641 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 10:13:00.646 +01:00 [INF] Hosting environment: Development
+2025-05-22 10:13:00.651 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 10:13:03.303 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 10:13:05.189 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 10:13:05.278 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:13:05.434 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:13:05.495 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:13:08.299 +01:00 [INF] Executed DbCommand (126ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 10:13:08.528 +01:00 [WRN] Registration attempt with existing email: tom@gmail.com
+2025-05-22 10:13:08.555 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-22 10:13:08.688 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 3175.358ms
+2025-05-22 10:13:08.701 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:13:08.734 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/problem+json; charset=utf-8 5436.2311ms
+2025-05-22 10:13:48.987 +01:00 [INF] Application is shutting down...
+2025-05-22 10:13:58.604 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-22 10:13:58.954 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-22 10:13:58.967 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-22 10:13:58.975 +01:00 [INF] Hosting environment: Development
+2025-05-22 10:13:58.979 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-22 10:14:01.555 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 158
+2025-05-22 10:14:01.643 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-22 10:14:01.649 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:14:01.760 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:14:01.929 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:14:06.225 +01:00 [INF] Executed DbCommand (109ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-22 10:14:06.640 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 10:14:06.679 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-22 10:14:06.783 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 4816.8473ms
+2025-05-22 10:14:06.793 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:14:06.822 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/problem+json; charset=utf-8 5270.283ms
+2025-05-22 10:18:51.415 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 156
+2025-05-22 10:18:51.466 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:18:51.520 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:18:51.527 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:18:51.997 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-22 10:18:52.045 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-22 10:18:52.294 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-22 10:18:52.389 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 847.3715ms
+2025-05-22 10:18:52.400 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:18:52.411 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/problem+json; charset=utf-8 995.4736ms
+2025-05-22 10:19:23.379 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 155
+2025-05-22 10:19:24.432 +01:00 [INF] CORS policy execution successful.
+2025-05-22 10:19:24.486 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:19:24.518 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-22 10:19:24.590 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-22 10:19:24.599 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 57.1489ms
+2025-05-22 10:19:24.608 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-22 10:19:24.624 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/problem+json; charset=utf-8 1245.1858ms
+2025-05-22 10:21:53.107 +01:00 [INF] Application is shutting down...

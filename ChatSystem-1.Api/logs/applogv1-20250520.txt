@@ -1,0 +1,15 @@
+2025-05-20 10:05:41.166 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-20 10:05:41.573 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-20 10:05:41.585 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-20 10:05:41.626 +01:00 [INF] Hosting environment: Development
+2025-05-20 10:05:41.678 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-20 10:05:53.952 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/ - null null
+2025-05-20 10:05:54.120 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-20 10:05:54.543 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/ - 404 0 null 595.644ms
+2025-05-20 10:05:54.698 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5199/, Response status code: 404
+2025-05-20 10:06:02.493 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-20 10:06:02.774 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 283.6359ms
+2025-05-20 10:06:04.730 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-20 10:06:04.764 +01:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-05-20 10:06:04.841 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.5969ms
+2025-05-20 10:06:27.776 +01:00 [INF] Application is shutting down...
