@@ -13,6 +13,13 @@ using ChatSystem_1.Application.Services;
 using Microsoft.AspNetCore.Identity;
 using ChatSystem_1.Domain.Entities.Models;
 using ChatSystem_1.Application.Services.Contracts; 
+using Microsoft.AspNetCore.Authentication.JwtBearer; 
+using Microsoft.IdentityModel.Tokens; 
+using System.Text; 
+using ChatSystem_1.Domain.Entities.ConfigurationsModels;
+using DotNetEnv;
+
+
 
 
 namespace ChatSystem_1.Extensions{
@@ -74,5 +81,39 @@ namespace ChatSystem_1.Extensions{
         }
         public static void ConfigureServiceManager(this IServiceCollection services) =>
         services.AddScoped<IServiceManager, ServiceManager>();
+
+
+        public static void ConfigureJwt(this IServiceCollection services, IConfiguration configuration)
+        {
+            Env.Load();
+
+            var jwtConfiguration = new JwtConfiguration();
+            configuration.Bind(jwtConfiguration.Section, jwtConfiguration);
+            var secretKey = Environment.GetEnvironmentVariable("SECRET");
+
+
+            services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(Options =>
+            {
+                Options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtConfiguration.ValidIssuer,
+                    ValidAudience = jwtConfiguration.ValidAudience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+
+                };
+            });
+        }
+        public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
+        services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
+
     }
 }

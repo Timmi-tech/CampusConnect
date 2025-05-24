@@ -820,11 +820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.Domain\\ChatSystem-1.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\ChatSystem-1.Domain\\ChatSystem-1.Domain.csproj",
       "projectName": "ChatSystem-1.Domain",
-      "projectPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.Domain\\ChatSystem-1.Domain.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\ChatSystem-1.Domain\\ChatSystem-1.Domain.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.Domain\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\ChatSystem-1.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -57,7 +57,11 @@
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[9.0.5, )"
+              "version": "[8.0.5, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.11.0, )"
             }
           },
           "imports": [

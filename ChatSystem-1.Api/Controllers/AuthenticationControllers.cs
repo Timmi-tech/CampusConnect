@@ -17,7 +17,7 @@ namespace ChatSystem_1.Api.Controllers
        {
            _service = service;
        }
-       [HttpPost] 
+       [HttpPost("Register")] 
        [ServiceFilter(typeof(ValidationFilterAttribute))] 
        public async Task<IActionResult>
        RegisterUser([FromBody] UserForRegistrationDto userForRegistration)
@@ -33,6 +33,21 @@ namespace ChatSystem_1.Api.Controllers
                return ValidationProblem(ModelState);
            }
            return StatusCode(201);
-       }    
+       }  
+
+        [HttpPost("login")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
+        public async Task<IActionResult> Authenticate([FromBody] UserForAuthenticationDto user)
+        {
+            var isValid = await _service.AuthenticationService.ValidateUser(user);
+            if (!isValid)
+            {
+                ModelState.AddModelError("Authentication", "Invalid email or password.");
+                return ValidationProblem(ModelState);
+            }
+
+            var tokenDto = await _service.AuthenticationService.CreateToken(populateExp: true);
+            return Ok(tokenDto);
+        }  
    }
 }

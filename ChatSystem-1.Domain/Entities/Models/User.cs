@@ -6,7 +6,9 @@ namespace ChatSystem_1.Domain.Entities.Models
     public class User : IdentityUser
     {
         public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty; 
-        public int MatricNumber { get; set; } 
+        public string LastName { get; set; } = string.Empty;
+        public int MatricNumber { get; set; }
+        public string RefreshToken { get; set; } = string.Empty;
+        public DateTime? RefreshTokenExpiryTime { get; set; }
     }
 }

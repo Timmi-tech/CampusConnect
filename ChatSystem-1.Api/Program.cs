@@ -3,7 +3,10 @@ using ChatSystem_1.Domain;
 using Serilog;
 using ChatSystem_1.Application.Mappings;
 using ChatSystem_1.Api.ActionFilters;
+using DotNetEnv;
 
+
+Env.Load();
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,9 +18,10 @@ builder.Host.ConfigureSerilogService();
 builder.Services.ConfigureLoggerService();
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
+builder.Services.ConfigureJwt(builder.Configuration);
+builder.Services.AddJwtConfiguration(builder.Configuration);
 builder.Services.ConfigurePostGressContext(builder.Configuration);
 builder.Services.ConfigureServiceManager();
-
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<ValidationFilterAttribute>(); 
 builder.Services.AddControllers(); 

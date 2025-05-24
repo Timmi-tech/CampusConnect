@@ -1,0 +1,248 @@
+2025-05-24 02:41:10.291 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-24 02:41:10.524 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-24 02:41:10.528 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-24 02:41:10.529 +01:00 [INF] Hosting environment: Development
+2025-05-24 02:41:10.529 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-24 02:41:11.229 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger - null null
+2025-05-24 02:41:11.411 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger - 301 0 null 187.581ms
+2025-05-24 02:41:11.489 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:41:11.742 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 253.4489ms
+2025-05-24 02:41:11.846 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui.css - null null
+2025-05-24 02:41:11.851 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-bundle.js - null null
+2025-05-24 02:41:11.862 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-standalone-preset.js - null null
+2025-05-24 02:41:11.881 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:41:11.891 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 10.598ms
+2025-05-24 02:41:11.912 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-05-24 02:41:11.914 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-05-24 02:41:11.917 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 55.1372ms
+2025-05-24 02:41:11.917 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui.css - 200 152034 text/css 70.6647ms
+2025-05-24 02:41:11.932 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-05-24 02:41:11.933 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 81.2137ms
+2025-05-24 02:41:12.929 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/favicon-32x32.png - null null
+2025-05-24 02:41:12.930 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-05-24 02:41:12.930 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/favicon-32x32.png - 200 628 image/png 1.0594ms
+2025-05-24 02:41:14.007 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:41:14.261 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 253.2395ms
+2025-05-24 02:41:55.603 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:41:55.604 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1.1221ms
+2025-05-24 02:41:56.467 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:41:56.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4897ms
+2025-05-24 02:41:57.206 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:41:57.211 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.6609ms
+2025-05-24 02:42:07.239 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:42:07.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1.9095ms
+2025-05-24 02:42:07.361 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:42:07.362 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.6521ms
+2025-05-24 02:42:08.096 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:42:08.102 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.5699ms
+2025-05-24 02:42:23.136 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:42:23.137 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 0.6958ms
+2025-05-24 02:42:23.204 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:42:23.205 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.9079ms
+2025-05-24 02:42:24.328 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:42:24.333 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.589ms
+2025-05-24 02:42:27.568 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:42:27.570 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1.7907ms
+2025-05-24 02:42:27.625 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:42:27.625 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2686ms
+2025-05-24 02:42:28.417 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:42:28.426 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.4157ms
+2025-05-24 02:43:33.096 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 148
+2025-05-24 02:43:33.105 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-05-24 02:43:33.107 +01:00 [INF] CORS policy execution successful.
+2025-05-24 02:43:33.295 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-24 02:43:33.352 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-24 02:43:34.303 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 944.2889ms
+2025-05-24 02:43:34.303 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-24 02:43:34.305 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: The field of type System.Int32 must be a string, array or ICollection type.
+   at System.ComponentModel.DataAnnotations.MaxLengthAttribute.IsValid(Object value)
+   at System.ComponentModel.DataAnnotations.ValidationAttribute.IsValid(Object value, ValidationContext validationContext)
+   at System.ComponentModel.DataAnnotations.ValidationAttribute.GetValidationResult(Object value, ValidationContext validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.DataAnnotationsModelValidator.Validate(ModelValidationContext validationContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.ValidateNode()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-24 02:43:34.330 +01:00 [ERR] Exception: InvalidCastException - The field of type System.Int32 must be a string, array or ICollection type.
+2025-05-24 02:43:34.381 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 500 null application/json; charset=utf-8 1285.1357ms
+2025-05-24 02:45:33.309 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:45:33.310 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 0.7988ms
+2025-05-24 02:45:33.426 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:45:33.426 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4772ms
+2025-05-24 02:45:34.766 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:45:34.774 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.4141ms
+2025-05-24 02:46:24.792 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 154
+2025-05-24 02:46:24.795 +01:00 [INF] CORS policy execution successful.
+2025-05-24 02:46:24.798 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-24 02:46:24.808 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-24 02:46:24.853 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 44.5495ms
+2025-05-24 02:46:24.853 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-24 02:46:24.855 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ChatSystem_1.Application.Services.AuthenticationService..ctor(ILoggerManager logger, IMapper mapper, UserManager`1 userManager, IOptions`1 configuration)
+   at ChatSystem_1.Application.Services.ServiceManager.<>c__DisplayClass1_0.<.ctor>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at ChatSystem_1.Application.Services.ServiceManager.get_AuthenticationService()
+   at ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser(UserForRegistrationDto userForRegistration) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Api\Controllers\AuthenticationControllers.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-05-24 02:46:24.881 +01:00 [ERR] Exception: NullReferenceException - Object reference not set to an instance of an object.
+2025-05-24 02:46:24.886 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 500 null application/json; charset=utf-8 93.8733ms
+2025-05-24 02:47:29.196 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:47:29.197 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 0.7477ms
+2025-05-24 02:47:30.130 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:47:30.131 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.23ms
+2025-05-24 02:47:31.315 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:47:31.320 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.3681ms
+2025-05-24 02:48:47.821 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication - application/json 154
+2025-05-24 02:48:47.823 +01:00 [INF] CORS policy execution successful.
+2025-05-24 02:48:47.826 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-24 02:48:47.845 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(ChatSystem_1.Application.DTOs.UserForRegistrationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-24 02:48:49.653 +01:00 [INF] Executed DbCommand (81ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-24 02:48:49.826 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-24 02:48:49.843 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-24 02:48:49.864 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api) in 2018.4467ms
+2025-05-24 02:48:49.864 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.RegisterUser (ChatSystem-1.Api)'
+2025-05-24 02:48:49.872 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication - 400 null application/problem+json; charset=utf-8 2050.903ms
+2025-05-24 02:49:48.661 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication/login - application/json 56
+2025-05-24 02:49:48.661 +01:00 [INF] CORS policy execution successful.
+2025-05-24 02:49:48.661 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-05-24 02:49:48.670 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(ChatSystem_1.Application.DTOs.UserForAuthenticationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-05-24 02:49:48.751 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-24 02:49:48.910 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-05-24 02:49:48.912 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-05-24 02:49:49.032 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "MatricNumber" = @p8, "NormalizedEmail" = @p9, "NormalizedUserName" = @p10, "PasswordHash" = @p11, "PhoneNumber" = @p12, "PhoneNumberConfirmed" = @p13, "RefreshToken" = @p14, "RefreshTokenExpiryTime" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-05-24 02:49:49.054 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.TokenDto'.
+2025-05-24 02:49:49.062 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api) in 391.8841ms
+2025-05-24 02:49:49.063 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-05-24 02:49:49.063 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication/login - 200 null application/json; charset=utf-8 402.744ms
+2025-05-24 02:51:35.981 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-24 02:51:36.471 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-24 02:51:36.510 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-24 02:51:36.513 +01:00 [INF] Hosting environment: Development
+2025-05-24 02:51:36.513 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-24 02:51:36.733 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:51:37.099 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 373.2497ms
+2025-05-24 02:51:40.046 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:51:40.051 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 5.5484ms
+2025-05-24 02:51:41.221 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:51:41.387 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 166.0788ms
+2025-05-24 02:52:31.841 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:52:31.845 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 8.8972ms
+2025-05-24 02:52:32.086 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:52:32.087 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.9213ms
+2025-05-24 02:52:34.175 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:52:34.180 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.1448ms
+2025-05-24 02:52:45.216 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:52:45.217 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1.2409ms
+2025-05-24 02:52:45.333 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:52:45.334 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5851ms
+2025-05-24 02:52:45.839 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:52:45.844 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.99ms
+2025-05-24 02:52:52.394 +01:00 [INF] Application is shutting down...
+2025-05-24 02:53:10.865 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-24 02:53:11.230 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-24 02:53:11.238 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-24 02:53:11.239 +01:00 [INF] Hosting environment: Development
+2025-05-24 02:53:11.239 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-24 02:53:11.715 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 02:53:11.943 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 230.0976ms
+2025-05-24 02:53:12.521 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 02:53:12.524 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 4.0299ms
+2025-05-24 02:53:12.956 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 02:53:13.196 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 240.7263ms
+2025-05-24 03:09:37.050 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 03:09:37.063 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 19.6904ms
+2025-05-24 03:09:39.825 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 03:09:39.866 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.9352ms
+2025-05-24 03:10:50.657 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 03:10:50.673 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 15.7544ms
+2025-05-24 03:10:50.769 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 03:10:50.770 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 1.043ms
+2025-05-24 03:10:56.786 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 03:10:56.796 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.5161ms
+2025-05-24 03:15:38.224 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 03:15:38.254 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 31.4019ms
+2025-05-24 03:15:41.151 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 03:15:41.152 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.8043ms
+2025-05-24 03:15:41.914 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 03:15:41.932 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.0808ms
+2025-05-24 03:16:31.648 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 03:16:31.651 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 2.6203ms
+2025-05-24 03:16:40.007 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 03:16:40.008 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.6666ms
+2025-05-24 03:16:42.653 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 03:16:42.663 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.3539ms
+2025-05-24 03:17:16.171 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 03:17:16.175 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 4.1151ms
+2025-05-24 03:17:18.053 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 03:17:18.053 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 0.5319ms
+2025-05-24 03:17:19.032 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 03:17:19.040 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.0883ms
+2025-05-24 12:24:54.574 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-05-24 12:24:54.818 +01:00 [INF] Now listening on: http://localhost:5199
+2025-05-24 12:24:54.830 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-24 12:24:54.831 +01:00 [INF] Hosting environment: Development
+2025-05-24 12:24:54.831 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\chatsystem-1.api
+2025-05-24 12:24:55.412 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-05-24 12:24:55.765 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 356.3534ms
+2025-05-24 12:24:55.837 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-24 12:24:55.842 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13730 application/javascript; charset=utf-8 4.503ms
+2025-05-24 12:24:57.503 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-05-24 12:24:57.643 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 139.1763ms
+2025-05-24 12:29:03.803 +01:00 [INF] Application is shutting down...

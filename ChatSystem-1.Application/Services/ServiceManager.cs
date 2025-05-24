@@ -5,6 +5,8 @@ using ChatSystem_1.Application.Services.Contracts;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.Configuration;
 using ChatSystem_1.Domain.Entities.Models;
+using ChatSystem_1.Domain.Entities.ConfigurationsModels;
+
 
 namespace ChatSystem_1.Application.Services
 {
@@ -18,7 +20,7 @@ namespace ChatSystem_1.Application.Services
         ILoggerManager logger,
         IMapper mapper,
         UserManager<User> userManager,
-        IConfiguration configuration
+        IOptions<JwtConfiguration> configuration
     )
     {
         _authenticationService = new Lazy<IAuthenticationService>(() => 
