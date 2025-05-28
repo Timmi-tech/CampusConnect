@@ -23,12 +23,15 @@ builder.Services.AddJwtConfiguration(builder.Configuration);
 builder.Services.ConfigurePostGressContext(builder.Configuration);
 builder.Services.ConfigureServiceManager();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddScoped<ValidationFilterAttribute>(); 
-builder.Services.AddControllers(); 
+builder.Services.AddScoped<ValidationFilterAttribute>();
+builder.Services.AddControllers();
+builder.Services.AddCloudinaryConfiguration(builder.Configuration);
+builder.Services.ConfigurePhotoService();
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.ConfigureSwagger(); 
 
 var app = builder.Build();
 
@@ -41,17 +44,18 @@ if (app.Environment.IsProduction())
     app.UseHsts();
 }
 
+
+app.UseSwagger();
+app.UseSwaggerUI(s =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    s.SwaggerEndpoint("/swagger/v1/swagger.json", "Campus Connect v1");
+}); 
 
 app.UseHttpsRedirection();
 
-app.UseCors("CorsPolicy");
-
 
 app.UseRouting();
+app.UseCors("CorsPolicy");
 app.UseAuthentication();
 
 app.MapControllers();

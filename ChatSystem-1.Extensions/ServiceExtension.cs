@@ -18,6 +18,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text; 
 using ChatSystem_1.Domain.Entities.ConfigurationsModels;
 using DotNetEnv;
+using Microsoft.Extensions.Options;
+using System.Security.Principal;
+using CloudinaryDotNet;
+using Microsoft.OpenApi.Models;
 
 
 
@@ -59,10 +63,10 @@ namespace ChatSystem_1.Extensions{
 
         public static void ConfigureIISIntegration(this IServiceCollection services)
         {
-            services.Configure<IISOptions>(options => {});
+            services.Configure<IISOptions>(options => { });
         }
         public static void ConfigurePostGressContext(this IServiceCollection services, IConfiguration configuration) =>
-            services.AddDbContext<RepositoryContext>(opts => 
+            services.AddDbContext<RepositoryContext>(opts =>
             opts.UseNpgsql(configuration.GetConnectionString("PostgresConnection")));
 
         public static void ConfigureIdentity(this IServiceCollection services)
@@ -114,6 +118,34 @@ namespace ChatSystem_1.Extensions{
         }
         public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
         services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
+
+        public static IServiceCollection AddCloudinaryConfiguration(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<CloudinaryConfigurations>(configuration.GetSection("Cloudinary"));
+
+            services.AddSingleton(sp =>
+            {
+                var settings = sp.GetRequiredService<IOptions<CloudinaryConfigurations>>().Value;
+                var account = new Account(settings.CloudName, settings.ApiKey, settings.ApiSecret);
+                return new Cloudinary(account);
+            });
+            return services;
+        }
+        public static void ConfigurePhotoService(this IServiceCollection services)
+        {
+            services.AddScoped<IPhotoService, PhotoService>();
+        }
+
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s =>
+            {
+                s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Campus Connect", Version = "v1" });
+                s.OperationFilter<FileUploadOperationFilter>(); 
+            }); 
+            
+            }
+            
 
     }
 }

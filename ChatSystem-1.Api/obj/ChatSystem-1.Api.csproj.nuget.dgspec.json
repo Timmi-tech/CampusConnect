@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.api\\ChatSystem-1.Api.csproj": {}
+    "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\Chatsystem-1.api\\ChatSystem-1.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.api\\ChatSystem-1.Api.csproj": {
+    "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\Chatsystem-1.api\\ChatSystem-1.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.api\\ChatSystem-1.Api.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\Chatsystem-1.api\\ChatSystem-1.Api.csproj",
         "projectName": "ChatSystem-1.Api",
-        "projectPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.api\\ChatSystem-1.Api.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\Chatsystem-1.api\\ChatSystem-1.Api.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\chatsystem-1.api\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\c##\\ChatSystemm\\Chatsystem-1.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -60,10 +60,6 @@
               "target": "Package",
               "version": "[3.1.1, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.10, )"
-            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -72,7 +68,11 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.6.2, )"
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             }
           },
           "imports": [
@@ -144,6 +144,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.27.5, )"
             },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
@@ -291,6 +295,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.27.5, )"
+            },
             "DotNetEnv": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -322,6 +330,10 @@
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             }
           },
           "imports": [
