@@ -27,6 +27,7 @@ builder.Services.AddScoped<ValidationFilterAttribute>();
 builder.Services.AddControllers();
 builder.Services.AddCloudinaryConfiguration(builder.Configuration);
 builder.Services.ConfigurePhotoService();
+builder.Services.ConfigureRepositoryManager();  
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -57,6 +58,7 @@ app.UseHttpsRedirection();
 app.UseRouting();
 app.UseCors("CorsPolicy");
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

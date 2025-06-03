@@ -39,7 +39,7 @@ TestResults/
 
 # Others
 *.swp
-*.bak
+*.bak 
 *.tmp
 
 # Ignore secrets/configs

@@ -1,0 +1,714 @@
+2025-06-01 00:43:54.315 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 00:43:54.552 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 00:43:54.562 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 00:43:54.566 +01:00 [INF] Hosting environment: Development
+2025-06-01 00:43:54.573 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 00:44:12.304 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 00:44:12.636 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 341.2734ms
+2025-06-01 00:44:20.570 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 00:44:20.859 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 289.5587ms
+2025-06-01 00:44:21.156 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 00:44:21.457 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 300.9793ms
+2025-06-01 00:44:23.400 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 00:44:24.723 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1325.8702ms
+2025-06-01 00:45:00.545 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:45:00.569 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 00:45:00.666 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:45:00.715 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:45:01.919 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 1190.2393ms
+2025-06-01 00:45:01.925 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:45:01.931 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Cloud name must be specified in Account!
+   at CloudinaryDotNet.ApiShared..ctor(Account account)
+   at CloudinaryDotNet.Api..ctor(Account account)
+   at CloudinaryDotNet.Cloudinary..ctor(Account account)
+   at ChatSystem_1.Extensions.ServiceExtensions.<>c.<AddCloudinaryConfiguration>b__9_0(IServiceProvider sp) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Extensions\ServiceExtension.cs:line 132
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-01 00:45:02.006 +01:00 [ERR] Exception: ArgumentException - Cloud name must be specified in Account!
+2025-06-01 00:45:02.089 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 500 null application/json; charset=utf-8 1543.3425ms
+2025-06-01 00:46:24.215 +01:00 [INF] Application is shutting down...
+2025-06-01 00:46:30.267 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 00:46:30.641 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 00:46:30.659 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 00:46:30.664 +01:00 [INF] Hosting environment: Development
+2025-06-01 00:46:30.667 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 00:46:34.511 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:46:34.555 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 00:46:34.603 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:46:34.633 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:46:37.766 +01:00 [INF] Executed DbCommand (171ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:46:38.434 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:46:38.656 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 4003.3701ms
+2025-06-01 00:46:38.668 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:46:38.716 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 4206.5575ms
+2025-06-01 00:53:27.396 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:53:27.427 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:27.435 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:53:27.626 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:53:27.640 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:53:27.650 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 202.6887ms
+2025-06-01 00:53:27.659 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:27.663 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 267.476ms
+2025-06-01 00:53:36.891 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:53:36.913 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:36.917 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:53:36.972 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:53:36.979 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:53:36.987 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 59.5518ms
+2025-06-01 00:53:36.992 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:36.995 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 104.352ms
+2025-06-01 00:53:42.252 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:53:42.262 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:42.265 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:53:42.280 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:53:42.288 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:53:42.293 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 18.8936ms
+2025-06-01 00:53:42.299 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:42.303 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 50.9856ms
+2025-06-01 00:53:45.240 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:53:45.254 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:45.259 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:53:45.270 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:53:45.283 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:53:45.289 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 21.8649ms
+2025-06-01 00:53:45.296 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:45.303 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 63.2334ms
+2025-06-01 00:53:47.508 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:53:47.516 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:47.520 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:53:47.535 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:53:47.543 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:53:47.553 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 20.8784ms
+2025-06-01 00:53:47.559 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:47.571 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 62.8444ms
+2025-06-01 00:53:51.153 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 00:53:51.163 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:51.177 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 00:53:51.190 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 00:53:51.199 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 00:53:51.203 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 16.9134ms
+2025-06-01 00:53:51.208 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 00:53:51.211 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 58.0068ms
+2025-06-01 01:07:41.229 +01:00 [INF] Application is shutting down...
+2025-06-01 01:12:43.227 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 01:12:43.422 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 01:12:43.431 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 01:12:43.437 +01:00 [INF] Hosting environment: Development
+2025-06-01 01:12:43.443 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 01:12:50.065 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 01:12:50.186 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 121.9687ms
+2025-06-01 01:12:50.284 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 01:12:50.298 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 13.439ms
+2025-06-01 01:12:51.336 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 01:12:51.662 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.7577ms
+2025-06-01 01:13:54.869 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:13:54.885 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 01:13:54.915 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:13:54.947 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:13:54.982 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:13:56.274 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:13:56.286 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 1290.73ms
+2025-06-01 01:13:56.295 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:13:56.320 +01:00 [ERR] Connection id "0HND0K45OMSPL", Request id "0HND0K45OMSPL:00000004": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Can't close, connection is in state Connecting
+   at Npgsql.NpgsqlConnection.Close(Boolean async)
+   at Npgsql.NpgsqlConnection.CloseAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.CloseDbConnectionAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetStateAsync(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2025-06-01 01:13:56.357 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 1487.8684ms
+2025-06-01 01:13:56.574 +01:00 [INF] Executed DbCommand (75ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:13:56.602 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:14:09.647 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 01:14:09.662 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:14:09.673 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:14:09.764 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:14:09.799 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 01:14:09.816 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 135.6678ms
+2025-06-01 01:14:09.827 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:14:09.837 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 190.3969ms
+2025-06-01 01:14:22.252 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:14:22.350 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:14:22.422 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:14:22.441 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:14:22.536 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:14:22.537 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:14:22.544 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 66.0894ms
+2025-06-01 01:14:22.555 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:14:22.564 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 312.0037ms
+2025-06-01 01:14:22.607 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Npgsql.NpgsqlDataReader.get_ColumnCount()
+   at Npgsql.NpgsqlDataReader.GetFieldValueCore[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetString(Int32 ordinal)
+   at lambda_method18(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Npgsql.NpgsqlDataReader.get_ColumnCount()
+   at Npgsql.NpgsqlDataReader.GetFieldValueCore[T](Int32 ordinal)
+   at Npgsql.NpgsqlDataReader.GetString(Int32 ordinal)
+   at lambda_method18(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:14:30.502 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 01:14:30.540 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:14:30.545 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:14:30.559 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:14:30.575 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 01:14:30.583 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 31.396ms
+2025-06-01 01:14:30.591 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:14:30.597 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 94.6042ms
+2025-06-01 01:14:50.166 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 01:14:50.179 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:14:50.186 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:14:50.202 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:14:50.212 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 01:14:50.222 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 24.109ms
+2025-06-01 01:14:50.228 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:14:50.236 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 69.8471ms
+2025-06-01 01:15:04.140 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:15:04.147 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:15:04.151 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:04.156 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:15:04.169 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:15:04.169 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:15:04.179 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 13.7759ms
+2025-06-01 01:15:04.190 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:04.193 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 53.1367ms
+2025-06-01 01:15:04.272 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.InvalidOperationException: The reader is closed
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlDataReader.<CheckClosedOrDisposed>g__Throw|138_0(ReaderState state)
+   at Npgsql.NpgsqlDataReader.CheckClosedOrDisposed()
+   at Npgsql.NpgsqlDataReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: The reader is closed
+   at Npgsql.ThrowHelper.ThrowInvalidOperationException(String message)
+   at Npgsql.NpgsqlDataReader.<CheckClosedOrDisposed>g__Throw|138_0(ReaderState state)
+   at Npgsql.NpgsqlDataReader.CheckClosedOrDisposed()
+   at Npgsql.NpgsqlDataReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.ReadAsync(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:15:05.113 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:15:05.123 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:15:05.128 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:05.132 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:15:05.143 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:15:05.145 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:15:05.163 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 22.66ms
+2025-06-01 01:15:05.205 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:05.209 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 95.8713ms
+2025-06-01 01:15:43.817 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:15:43.829 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:15:43.835 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:43.841 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:15:43.852 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:15:43.853 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:15:43.859 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 8.9466ms
+2025-06-01 01:15:43.872 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:43.880 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 62.8394ms
+2025-06-01 01:15:50.239 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:15:50.276 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:15:50.279 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:50.284 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:15:50.293 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:15:50.293 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:15:50.299 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 10.256ms
+2025-06-01 01:15:50.309 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:15:50.313 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 73.8813ms
+2025-06-01 01:16:11.975 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 01:16:11.987 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:16:11.992 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:16:12.004 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:16:12.012 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 01:16:12.018 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 18.2119ms
+2025-06-01 01:16:12.025 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:16:12.029 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 53.7026ms
+2025-06-01 01:16:35.640 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 100
+2025-06-01 01:16:35.670 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:16:35.674 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:16:35.676 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:16:35.695 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:16:35.707 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 15.229ms
+2025-06-01 01:16:35.710 +01:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:16:35.717 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:16:35.720 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e?userId=c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 80.5676ms
+2025-06-01 01:16:35.730 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:19:34.514 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 01:19:34.524 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 9.8835ms
+2025-06-01 01:19:34.612 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 01:19:34.633 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 19.2509ms
+2025-06-01 01:19:35.389 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 01:19:35.427 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.4387ms
+2025-06-01 01:20:58.965 +01:00 [INF] Application is shutting down...
+2025-06-01 01:22:56.105 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 01:22:56.309 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 01:22:56.323 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 01:22:56.337 +01:00 [INF] Hosting environment: Development
+2025-06-01 01:22:56.353 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 01:23:00.776 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 01:23:00.894 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 119.9054ms
+2025-06-01 01:23:00.970 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 01:23:00.983 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 12.6343ms
+2025-06-01 01:23:01.518 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 01:23:02.319 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 801.1844ms
+2025-06-01 01:23:30.187 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - application/json 93
+2025-06-01 01:23:30.204 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 01:23:30.230 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:23:30.261 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:23:30.289 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:23:31.555 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:23:31.563 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 1264.5041ms
+2025-06-01 01:23:31.568 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:23:31.583 +01:00 [ERR] Connection id "0HND0K9RORIF6", Request id "0HND0K9RORIF6:00000001": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Can't close, connection is in state Connecting
+   at Npgsql.NpgsqlConnection.Close(Boolean async)
+   at Npgsql.NpgsqlConnection.CloseAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.CloseDbConnectionAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetStateAsync(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2025-06-01 01:23:31.605 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - 204 null null 1417.4437ms
+2025-06-01 01:23:31.786 +01:00 [INF] Executed DbCommand (67ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:23:31.813 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:26:29.925 +01:00 [INF] Application is shutting down...
+2025-06-01 01:26:37.307 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 01:26:37.627 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 01:26:37.641 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 01:26:37.645 +01:00 [INF] Hosting environment: Development
+2025-06-01 01:26:37.652 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 01:26:41.187 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 01:26:41.312 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 125.7554ms
+2025-06-01 01:26:41.401 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 01:26:41.460 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 59.0553ms
+2025-06-01 01:26:41.854 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 01:26:42.157 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 302.9471ms
+2025-06-01 01:26:48.625 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - application/json 93
+2025-06-01 01:26:48.643 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 01:26:48.674 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:26:48.707 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:26:48.733 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:26:49.900 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:26:49.909 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 1157.9777ms
+2025-06-01 01:26:49.914 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:26:49.936 +01:00 [ERR] Connection id "0HND0KBTETB8G", Request id "0HND0KBTETB8G:00000004": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Can't close, connection is in state Connecting
+   at Npgsql.NpgsqlConnection.Close(Boolean async)
+   at Npgsql.NpgsqlConnection.CloseAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.CloseDbConnectionAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetStateAsync(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2025-06-01 01:26:49.972 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - 204 null null 1347.4957ms
+2025-06-01 01:26:50.141 +01:00 [INF] Executed DbCommand (57ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:26:50.165 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:31:50.085 +01:00 [INF] Application is shutting down...
+2025-06-01 01:32:04.665 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 01:32:04.802 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 01:32:04.810 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 01:32:04.814 +01:00 [INF] Hosting environment: Development
+2025-06-01 01:32:04.816 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 01:32:07.959 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 01:32:08.102 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 143.0592ms
+2025-06-01 01:32:08.194 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 01:32:08.207 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 13.5361ms
+2025-06-01 01:32:08.651 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 01:32:08.918 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 266.2485ms
+2025-06-01 01:32:18.488 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - application/json 93
+2025-06-01 01:32:18.524 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 01:32:18.562 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:32:18.598 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:32:18.626 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:32:19.826 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:32:19.836 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 1196.5775ms
+2025-06-01 01:32:19.843 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:32:19.865 +01:00 [ERR] Connection id "0HND0KEUR6K0I", Request id "0HND0KEUR6K0I:00000004": An unhandled exception was thrown by the application.
+System.InvalidOperationException: Can't close, connection is in state Connecting
+   at Npgsql.NpgsqlConnection.Close(Boolean async)
+   at Npgsql.NpgsqlConnection.CloseAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.CloseDbConnectionAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.ResetStateAsync(Boolean disposeDbConnection)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.EntityFrameworkCore.DbContext.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|26_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.<FireOnCompleted>g__ProcessEvents|242_0(HttpProtocol protocol, Stack`1 events)
+2025-06-01 01:32:19.895 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - 204 null null 1407.7411ms
+2025-06-01 01:32:20.095 +01:00 [INF] Executed DbCommand (83ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:32:20.123 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-01 01:35:20.933 +01:00 [INF] Application is shutting down...
+2025-06-01 01:35:27.118 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 01:35:27.269 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 01:35:27.292 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 01:35:27.296 +01:00 [INF] Hosting environment: Development
+2025-06-01 01:35:27.310 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 01:35:29.581 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2025-06-01 01:35:29.729 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 148.619ms
+2025-06-01 01:35:29.812 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-01 01:35:29.827 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 14.9743ms
+2025-06-01 01:35:30.216 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-01 01:35:30.471 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 255.0417ms
+2025-06-01 01:35:39.648 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - application/json 93
+2025-06-01 01:35:39.692 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 01:35:39.719 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:35:39.752 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:35:39.779 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:35:41.142 +01:00 [INF] Executed DbCommand (48ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:35:41.176 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 1381.3746ms
+2025-06-01 01:35:41.184 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:35:41.189 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+UserProfileNotFoundException: The Seller with id: c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r doesn't exist in the database.
+   at ChatSystem_1.Application.Services.UserProfileService.UpdateProfileAsync(String userId, UserUpdateProfileDto userUpdateProfileDto, Boolean trackChanges) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\UserProfileService.cs:line 40
+   at ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile(String id, UserUpdateProfileDto userUpdateProfile) in C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api\Controllers\UserProfileController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-01 01:35:41.247 +01:00 [ERR] Exception: UserProfileNotFoundException - The Seller with id: c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r doesn't exist in the database.
+2025-06-01 01:35:41.289 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3r - 404 null application/json; charset=utf-8 1640.6704ms
+2025-06-01 01:35:49.290 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 93
+2025-06-01 01:35:49.313 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:35:49.318 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:35:49.329 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:35:49.468 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:35:49.648 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 313.6805ms
+2025-06-01 01:35:49.652 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:35:49.654 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserUpdateProfileDto -> User
+ChatSystem_1.Application.DTOs.UserUpdateProfileDto -> ChatSystem_1.Domain.Entities.Models.User
+   at lambda_method144(Closure, UserUpdateProfileDto, User, ResolutionContext)
+   at ChatSystem_1.Application.Services.UserProfileService.UpdateProfileAsync(String userId, UserUpdateProfileDto userUpdateProfileDto, Boolean trackChanges) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\UserProfileService.cs:line 43
+   at ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile(String id, UserUpdateProfileDto userUpdateProfile) in C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api\Controllers\UserProfileController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-01 01:35:49.674 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserUpdateProfileDto -> User
+ChatSystem_1.Application.DTOs.UserUpdateProfileDto -> ChatSystem_1.Domain.Entities.Models.User
+2025-06-01 01:35:49.681 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 500 null application/json; charset=utf-8 391.5001ms
+2025-06-01 01:36:22.715 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 97
+2025-06-01 01:36:22.728 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:36:22.734 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:36:22.741 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:36:22.779 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:36:22.791 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 40.0831ms
+2025-06-01 01:36:22.794 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:36:22.797 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserUpdateProfileDto -> User
+ChatSystem_1.Application.DTOs.UserUpdateProfileDto -> ChatSystem_1.Domain.Entities.Models.User
+   at lambda_method144(Closure, UserUpdateProfileDto, User, ResolutionContext)
+   at ChatSystem_1.Application.Services.UserProfileService.UpdateProfileAsync(String userId, UserUpdateProfileDto userUpdateProfileDto, Boolean trackChanges) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\UserProfileService.cs:line 43
+   at ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile(String id, UserUpdateProfileDto userUpdateProfile) in C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api\Controllers\UserProfileController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-01 01:36:22.816 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserUpdateProfileDto -> User
+ChatSystem_1.Application.DTOs.UserUpdateProfileDto -> ChatSystem_1.Domain.Entities.Models.User
+2025-06-01 01:36:22.819 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 500 null application/json; charset=utf-8 103.0696ms
+2025-06-01 01:37:03.918 +01:00 [INF] Application is shutting down...
+2025-06-01 01:38:15.927 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-01 01:38:16.046 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-01 01:38:16.053 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-01 01:38:16.055 +01:00 [INF] Hosting environment: Development
+2025-06-01 01:38:16.061 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-01 01:38:19.677 +01:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - application/json 97
+2025-06-01 01:38:19.753 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-01 01:38:19.792 +01:00 [INF] CORS policy execution successful.
+2025-06-01 01:38:19.840 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:38:19.891 +01:00 [INF] Route matched with {action = "UpdateUserProfile", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateUserProfile(System.String, ChatSystem_1.Application.DTOs.UserUpdateProfileDto) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:38:21.729 +01:00 [INF] Executed DbCommand (102ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:38:22.256 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-01 01:38:22.262 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@p2='?', @p3='?', @p0='?', @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "Email" = @p0, "MatricNumber" = @p1
+WHERE "Id" = @p2 AND "ConcurrencyStamp" = @p3;
+2025-06-01 01:38:22.266 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api) in 2355.2409ms
+2025-06-01 01:38:22.274 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.UpdateUserProfile (ChatSystem-1.Api)'
+2025-06-01 01:38:22.300 +01:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 204 null null 2625.9529ms
+2025-06-01 01:38:32.978 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - null null
+2025-06-01 01:38:33.007 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:38:33.024 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser(System.String) on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-01 01:38:33.135 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-01 01:38:33.158 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-01 01:38:33.188 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 150.8099ms
+2025-06-01 01:38:33.195 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-01 01:38:33.201 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile/c4e0e117-0d57-42b8-8e6f-f3f2e5517e3e - 200 null application/json; charset=utf-8 223.2377ms

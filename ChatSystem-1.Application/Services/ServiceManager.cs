@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using ChatSystem_1.Domain.Entities.Models;
 using ChatSystem_1.Domain.Entities.ConfigurationsModels;
 using CloudinaryDotNet;
+using ChatSystem_1.Domain.Contracts;
 
 
 namespace ChatSystem_1.Application.Services
@@ -15,11 +16,13 @@ namespace ChatSystem_1.Application.Services
     {
         private readonly Lazy<IAuthenticationService> _authenticationService;
         private readonly Lazy<IPhotoService> _photoService;
+        private readonly Lazy<IUserProfileService> _userProfileService;
 
 
         public ServiceManager
         (
             ILoggerManager logger,
+            IRepositoryManager repositoryManager,
             IMapper mapper,
             UserManager<User> userManager,
             IOptions<JwtConfiguration> configuration,
@@ -29,8 +32,10 @@ namespace ChatSystem_1.Application.Services
             _authenticationService = new Lazy<IAuthenticationService>(() =>
                 new AuthenticationService(logger, mapper, userManager, configuration));
             _photoService = new Lazy<IPhotoService>(() => new PhotoService(cloudinary));
-    }
-    public IAuthenticationService AuthenticationService => _authenticationService.Value;
-    public IPhotoService PhotoService => _photoService.Value;
+            _userProfileService = new Lazy<IUserProfileService>(() => new UserProfileService(repositoryManager, logger, mapper, PhotoService));
+        }
+        public IAuthenticationService AuthenticationService => _authenticationService.Value;
+        public IPhotoService PhotoService => _photoService.Value;
+        public IUserProfileService UserProfileService => _userProfileService.Value;
     }
 }

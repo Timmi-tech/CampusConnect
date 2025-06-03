@@ -22,6 +22,8 @@ using Microsoft.Extensions.Options;
 using System.Security.Principal;
 using CloudinaryDotNet;
 using Microsoft.OpenApi.Models;
+using ChatSystem_1.Domain.Contracts;
+using ChatSystem_1.Infrastructure.Repository;
 
 
 
@@ -93,7 +95,7 @@ namespace ChatSystem_1.Extensions{
 
             var jwtConfiguration = new JwtConfiguration();
             configuration.Bind(jwtConfiguration.Section, jwtConfiguration);
-            var secretKey = Environment.GetEnvironmentVariable("SECRET");
+            var secretKey = Environment.GetEnvironmentVariable("JWT_SECRET");
 
 
             services.AddAuthentication(opt =>
@@ -141,11 +143,38 @@ namespace ChatSystem_1.Extensions{
             services.AddSwaggerGen(s =>
             {
                 s.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Campus Connect", Version = "v1" });
-                s.OperationFilter<FileUploadOperationFilter>(); 
+                s.OperationFilter<FileUploadOperationFilter>();
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "Enter 'Bearer' [space] and then your valid token in the text input below.\n\nExample: \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\""
+                });
+
+                s.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Scheme = "Bearer",
+                            Name = "Authorization",
+                            In = ParameterLocation.Header
+                        },
+                        new string[] {}
+                    }
+                });
             }); 
             
-            }
-            
+        }
+        public static void ConfigureRepositoryManager(this IServiceCollection services) => services.AddScoped<IRepositoryManager, RepositoryManager>(); 
 
     }
 }

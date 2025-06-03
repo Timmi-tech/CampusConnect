@@ -91,6 +91,7 @@ namespace ChatSystem_1.Application.Services
         { 
             var claims = new List<Claim> 
             { 
+                new Claim(ClaimTypes.NameIdentifier, _user.Id), 
                 new Claim(ClaimTypes.Name, _user.UserName) 
             }; 
             return claims; 
