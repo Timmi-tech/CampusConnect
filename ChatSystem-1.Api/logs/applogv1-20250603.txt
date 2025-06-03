@@ -147,3 +147,9 @@ LIMIT 2
 2025-06-03 01:22:25.480 +01:00 [INF] Hosting environment: Development
 2025-06-03 01:22:25.505 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
 2025-06-03 01:39:28.994 +01:00 [INF] Application is shutting down...
+2025-06-03 01:51:58.169 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 01:51:58.596 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-03 01:51:58.767 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 01:51:59.111 +01:00 [INF] Hosting environment: Development
+2025-06-03 01:51:59.125 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-03 01:52:02.744 +01:00 [INF] Application is shutting down...

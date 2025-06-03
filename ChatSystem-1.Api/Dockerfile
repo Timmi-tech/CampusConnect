@@ -20,4 +20,11 @@ RUN dotnet publish "ChatSystem-1.Api.csproj" -c $configuration -o /app/publish /
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ChatSystem-1.Api.dll"]
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+
+# Install dotnet-ef tool
+RUN dotnet tool install --global dotnet-ef
+ENV PATH="${PATH}:/root/.dotnet/tools"
+
+ENTRYPOINT ["./entrypoint.sh"]
