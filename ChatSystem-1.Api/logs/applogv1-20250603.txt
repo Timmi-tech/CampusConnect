@@ -153,3 +153,54 @@ LIMIT 2
 2025-06-03 01:51:59.111 +01:00 [INF] Hosting environment: Development
 2025-06-03 01:51:59.125 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
 2025-06-03 01:52:02.744 +01:00 [INF] Application is shutting down...
+2025-06-03 13:26:08.994 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-03 13:26:09.557 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-03 13:26:09.566 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-03 13:26:09.571 +01:00 [INF] Hosting environment: Development
+2025-06-03 13:26:09.576 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-03 13:26:31.055 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-03 13:26:31.562 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - 200 null text/html;charset=utf-8 512.9003ms
+2025-06-03 13:26:32.122 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-03 13:26:34.768 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 2646.0805ms
+2025-06-03 13:26:35.332 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-03 13:26:35.878 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 545.6839ms
+2025-06-03 13:27:04.746 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication/login - application/json 56
+2025-06-03 13:27:04.779 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-03 13:27:04.870 +01:00 [INF] CORS policy execution successful.
+2025-06-03 13:27:04.952 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-03 13:27:05.025 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(ChatSystem_1.Application.DTOs.UserForAuthenticationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-06-03 13:27:14.873 +01:00 [INF] Executed DbCommand (584ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-03 13:27:15.956 +01:00 [INF] Executed DbCommand (264ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-06-03 13:27:16.283 +01:00 [INF] Executed DbCommand (283ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-03 13:27:17.008 +01:00 [INF] Executed DbCommand (328ms) [Parameters=[@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "MatricNumber" = @p8, "NormalizedEmail" = @p9, "NormalizedUserName" = @p10, "PasswordHash" = @p11, "PhoneNumber" = @p12, "PhoneNumberConfirmed" = @p13, "ProfileImageUrl" = @p14, "RefreshToken" = @p15, "RefreshTokenExpiryTime" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-06-03 13:27:17.171 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.TokenDto'.
+2025-06-03 13:27:17.275 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api) in 12228.3065ms
+2025-06-03 13:27:17.298 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-03 13:27:17.350 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication/login - 200 null application/json; charset=utf-8 12603.9154ms
+2025-06-03 13:27:50.287 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/UserProfile - null null
+2025-06-03 13:27:50.566 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-03 13:27:50.601 +01:00 [INF] Route matched with {action = "GetUser", controller = "UserProfile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUser() on controller ChatSystem_1.Api.Controllers.UserProfileController (ChatSystem-1.Api).
+2025-06-03 13:27:54.727 +01:00 [INF] Executed DbCommand (332ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-06-03 13:27:54.941 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.UserProfileDto'.
+2025-06-03 13:27:55.149 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api) in 1153.6158ms
+2025-06-03 13:27:55.213 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.UserProfileController.GetUser (ChatSystem-1.Api)'
+2025-06-03 13:27:55.241 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/UserProfile - 200 null application/json; charset=utf-8 4953.7295ms
+2025-06-03 13:30:39.831 +01:00 [INF] Application is shutting down...

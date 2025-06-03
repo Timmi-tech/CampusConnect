@@ -5,6 +5,7 @@ namespace ChatSystem_1.Application.DTOs
 {
     public record UserProfileDto
     {
+        public string Id { get; init; } = string.Empty;
         public string Firstname { get; init; } = string.Empty;
         public string Lastname { get; init; } = string.Empty;
         public int Matricnumber { get; init; }
