@@ -9,4 +9,9 @@ namespace ChatSystem_1.Application.DTOs
         [Required]
         public IFormFile? File { get; set; }
     }
+
+    public class UploadImagesDto
+    {
+        public List<IFormFile> Files { get; set; }
+    }
 }

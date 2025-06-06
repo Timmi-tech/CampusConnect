@@ -6,7 +6,7 @@ using ChatSystem_1.Application.Services.Contracts;
 using ChatSystem_1.Application.DTOs;
 
 [ApiController]
-[Route("api/images")]
+[Route("api/image")]
 public class PhotosController : ControllerBase
 {
     private readonly IPhotoService _photoService;
@@ -33,8 +33,6 @@ public class PhotosController : ControllerBase
         if (uploadDto.File == null || uploadDto.File.Length == 0)
             return BadRequest(new { message = "No file uploaded or file is empty." });
 
-        try
-        {
             var result = await _photoService.UploadImageAsync(uploadDto.File);
 
             if (result.Error != null)
@@ -47,10 +45,35 @@ public class PhotosController : ControllerBase
                 url = result.SecureUrl.ToString()
             });
         }
-        catch (Exception ex)
+    /// <summary>
+    /// Uploads an image to Cloudinary.
+    /// </summary>
+    /// <param name="file">The image file to upload.</param>
+    /// <returns>The uploaded image result.</returns>
+    [HttpPost("upload-multiple")]
+    [Consumes("multipart/form-data")]  // ✅ Ensure Swagger knows it's a file upload
+
+    [SwaggerOperation(
+        Summary = "Uploads a photo",
+        Description = "Upload an image file"
+    )]
+    public async Task<IActionResult> UploadImages([FromForm] UploadImagesDto uploadImagesDto)
+    {
+
+        if (uploadImagesDto.Files == null || !uploadImagesDto.Files.Any())
+            return BadRequest(new { message = "No files uploaded or files are empty." });
+        var results = await _photoService.UploadImagesAsync(uploadImagesDto.Files);
+        var uploadedImages = results.Select(result => new
         {
-            return StatusCode((int)HttpStatusCode.InternalServerError, new { message = "An error occurred while uploading the image.", error = ex.Message });
-        }
+            publicId = result.PublicId,
+            url = result.SecureUrl.ToString()
+        }).ToList();
+        return Ok(new
+        {
+            message = "Images uploaded successfully.",
+            images = uploadedImages
+        });
+
     }
 
     [HttpDelete("{publicId}")]
