@@ -1,0 +1,309 @@
+2025-06-11 22:49:29.470 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-11 22:49:29.645 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-11 22:49:29.652 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-11 22:49:29.656 +01:00 [INF] Hosting environment: Development
+2025-06-11 22:49:29.661 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-11 22:49:40.573 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-11 22:49:40.902 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - 200 null text/html;charset=utf-8 335.3768ms
+2025-06-11 22:49:41.146 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-11 22:49:41.158 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 11.4328ms
+2025-06-11 22:49:42.170 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-11 22:49:42.440 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 269.5007ms
+2025-06-11 22:50:16.140 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication/login - application/json 56
+2025-06-11 22:50:16.158 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-11 22:50:16.187 +01:00 [INF] CORS policy execution successful.
+2025-06-11 22:50:16.233 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-11 22:50:16.266 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(ChatSystem_1.Application.DTOs.UserForAuthenticationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-06-11 22:50:18.244 +01:00 [ERR] An error occurred using the connection to database 'campus_connect_eym0' on server 'tcp://dpg-d0v3rc63jp1c73dorua0-a.oregon-postgres.render.com:5432'.
+2025-06-11 22:50:18.269 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-06-11 22:50:18.316 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api) in 2036.8259ms
+2025-06-11 22:50:18.323 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-11 22:50:18.332 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at ChatSystem_1.Application.Services.AuthenticationService.ValidateUser(UserForAuthenticationDto userForAuth) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\AuthenticationService.cs:line 47
+   at ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate(UserForAuthenticationDto user) in C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api\Controllers\AuthenticationControllers.cs:line 42
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-11 22:50:18.409 +01:00 [ERR] Exception: SocketException - No such host is known.
+2025-06-11 22:50:18.466 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication/login - 500 null application/json; charset=utf-8 2325.665ms
+2025-06-11 22:52:14.312 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication/login - application/json 56
+2025-06-11 22:52:14.323 +01:00 [INF] CORS policy execution successful.
+2025-06-11 22:52:14.327 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-11 22:52:14.333 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(ChatSystem_1.Application.DTOs.UserForAuthenticationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-06-11 22:52:17.126 +01:00 [INF] Executed DbCommand (411ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-11 22:52:17.933 +01:00 [INF] Executed DbCommand (289ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-06-11 22:52:18.247 +01:00 [INF] Executed DbCommand (296ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-11 22:52:18.681 +01:00 [INF] Executed DbCommand (282ms) [Parameters=[@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "MatricNumber" = @p8, "NormalizedEmail" = @p9, "NormalizedUserName" = @p10, "PasswordHash" = @p11, "PhoneNumber" = @p12, "PhoneNumberConfirmed" = @p13, "ProfileImageUrl" = @p14, "RefreshToken" = @p15, "RefreshTokenExpiryTime" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-06-11 22:52:18.757 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.TokenDto'.
+2025-06-11 22:52:18.775 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api) in 4431.7562ms
+2025-06-11 22:52:18.780 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-11 22:52:18.785 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication/login - 200 null application/json; charset=utf-8 4473.1726ms
+2025-06-11 22:53:11.170 +01:00 [INF] Application is shutting down...
+2025-06-11 22:57:56.354 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-11 22:57:56.512 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-11 22:57:56.522 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-11 22:57:56.526 +01:00 [INF] Hosting environment: Development
+2025-06-11 22:57:56.530 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-11 22:57:59.842 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-11 22:57:59.984 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - 200 null text/html;charset=utf-8 143.5595ms
+2025-06-11 22:58:00.132 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-11 22:58:00.163 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 31.0873ms
+2025-06-11 22:58:01.414 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-11 22:58:02.115 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 701.3211ms
+2025-06-11 22:58:26.224 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication/login - application/json 56
+2025-06-11 22:58:26.240 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-11 22:58:26.280 +01:00 [INF] CORS policy execution successful.
+2025-06-11 22:58:26.338 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-11 22:58:26.380 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(ChatSystem_1.Application.DTOs.UserForAuthenticationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-06-11 22:58:30.619 +01:00 [INF] Executed DbCommand (374ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-11 22:58:31.262 +01:00 [INF] Executed DbCommand (293ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-06-11 22:58:31.594 +01:00 [INF] Executed DbCommand (311ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-11 22:58:32.073 +01:00 [INF] Executed DbCommand (298ms) [Parameters=[@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "MatricNumber" = @p8, "NormalizedEmail" = @p9, "NormalizedUserName" = @p10, "PasswordHash" = @p11, "PhoneNumber" = @p12, "PhoneNumberConfirmed" = @p13, "ProfileImageUrl" = @p14, "RefreshToken" = @p15, "RefreshTokenExpiryTime" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-06-11 22:58:32.118 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.TokenDto'.
+2025-06-11 22:58:32.144 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api) in 5754.0512ms
+2025-06-11 22:58:32.150 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-11 22:58:32.160 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication/login - 200 null application/json; charset=utf-8 5935.9964ms
+2025-06-11 22:59:12.525 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/Posts - multipart/form-data; boundary=----WebKitFormBoundaryBSaJoD7Kv9PgRdM4 2681600
+2025-06-11 22:59:12.542 +01:00 [INF] CORS policy execution successful.
+2025-06-11 22:59:12.623 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 22:59:12.636 +01:00 [INF] Route matched with {action = "CreatePost", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreatePost(ChatSystem_1.Application.DTOs.CreatePostDto) on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-11 22:59:21.300 +01:00 [INF] Executed DbCommand (487ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Posts" ("Caption", "CreatedAt", "UserId")
+VALUES (@p0, @p1, @p2)
+RETURNING "PostId";
+2025-06-11 22:59:22.325 +01:00 [INF] Executed DbCommand (279ms) [Parameters=[@p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PostImages" ("ImageUrl", "PostId")
+VALUES (@p3, @p4)
+RETURNING "PostImageId";
+INSERT INTO "PostImages" ("ImageUrl", "PostId")
+VALUES (@p5, @p6)
+RETURNING "PostImageId";
+2025-06-11 22:59:22.776 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api) in 10132.8303ms
+2025-06-11 22:59:22.782 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 22:59:22.788 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Post -> CreatePostDto
+ChatSystem_1.Domain.Entities.Models.Post -> ChatSystem_1.Application.DTOs.CreatePostDto
+   at lambda_method386(Closure, Object, CreatePostDto, ResolutionContext)
+   at ChatSystem_1.Application.Services.PostService.CreatePostAsync(CreatePostDto postDto, String userId) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\PostService.cs:line 53
+   at ChatSystem_1.Api.Controllers.PostControllers.CreatePost(CreatePostDto createPostDto) in C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api\Controllers\PostControllers.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-11 22:59:22.864 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Post -> CreatePostDto
+ChatSystem_1.Domain.Entities.Models.Post -> ChatSystem_1.Application.DTOs.CreatePostDto
+2025-06-11 22:59:22.921 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/Posts - 500 null application/json; charset=utf-8 10395.4863ms
+2025-06-11 23:02:11.905 +01:00 [INF] Application is shutting down...
+2025-06-11 23:02:18.467 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-11 23:02:18.622 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-11 23:02:18.631 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-11 23:02:18.635 +01:00 [INF] Hosting environment: Development
+2025-06-11 23:02:18.641 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-11 23:02:22.417 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/Posts - multipart/form-data; boundary=----WebKitFormBoundarylAkkCfzG3HkpYN3B 2681600
+2025-06-11 23:02:22.462 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-11 23:02:22.497 +01:00 [INF] CORS policy execution successful.
+2025-06-11 23:02:22.643 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 23:02:22.684 +01:00 [INF] Route matched with {action = "CreatePost", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreatePost(ChatSystem_1.Application.DTOs.CreatePostDto) on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-11 23:02:31.627 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api) in 8932.4657ms
+2025-06-11 23:02:31.633 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 23:02:31.643 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreatePostDto -> Post
+ChatSystem_1.Application.DTOs.CreatePostDto -> ChatSystem_1.Domain.Entities.Models.Post
+   at lambda_method43(Closure, Object, Post, ResolutionContext)
+   at ChatSystem_1.Application.Services.PostService.CreatePostAsync(CreatePostDto postDto, String userId) in C:\Users\user\Desktop\c##\ChatSystemm\ChatSystem-1.Application\Services\PostService.cs:line 37
+   at ChatSystem_1.Api.Controllers.PostControllers.CreatePost(CreatePostDto createPostDto) in C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api\Controllers\PostControllers.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-06-11 23:02:31.705 +01:00 [ERR] Exception: AutoMapperMappingException - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreatePostDto -> Post
+ChatSystem_1.Application.DTOs.CreatePostDto -> ChatSystem_1.Domain.Entities.Models.Post
+2025-06-11 23:02:31.821 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/Posts - 500 null application/json; charset=utf-8 9406.0303ms
+2025-06-11 23:05:47.770 +01:00 [INF] Application is shutting down...
+2025-06-11 23:05:56.286 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-11 23:05:56.421 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-11 23:05:56.432 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-11 23:05:56.437 +01:00 [INF] Hosting environment: Development
+2025-06-11 23:05:56.441 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-11 23:06:04.033 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/Posts - multipart/form-data; boundary=----WebKitFormBoundaryFJvaZYSwdvoAnzfu 2681600
+2025-06-11 23:06:04.082 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-11 23:06:04.120 +01:00 [INF] CORS policy execution successful.
+2025-06-11 23:06:04.266 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 23:06:04.297 +01:00 [INF] Route matched with {action = "CreatePost", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreatePost(ChatSystem_1.Application.DTOs.CreatePostDto) on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-11 23:06:15.790 +01:00 [INF] Executed DbCommand (364ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Posts" ("Caption", "CreatedAt", "UserId")
+VALUES (@p0, @p1, @p2)
+RETURNING "PostId";
+2025-06-11 23:06:16.147 +01:00 [INF] Executed DbCommand (294ms) [Parameters=[@p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PostImages" ("ImageUrl", "PostId")
+VALUES (@p3, @p4)
+RETURNING "PostImageId";
+INSERT INTO "PostImages" ("ImageUrl", "PostId")
+VALUES (@p5, @p6)
+RETURNING "PostImageId";
+2025-06-11 23:06:16.506 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.PostDto'.
+2025-06-11 23:06:16.580 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api) in 12271.4134ms
+2025-06-11 23:06:16.585 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 23:06:16.602 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/Posts - 200 null application/json; charset=utf-8 12571.4408ms
+2025-06-11 23:06:37.060 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/Posts - multipart/form-data; boundary=----WebKitFormBoundaryx8VGQKig83f6L9h5 2681600
+2025-06-11 23:06:37.079 +01:00 [INF] CORS policy execution successful.
+2025-06-11 23:06:37.087 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 23:06:37.093 +01:00 [INF] Route matched with {action = "CreatePost", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreatePost(ChatSystem_1.Application.DTOs.CreatePostDto) on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-11 23:06:43.277 +01:00 [INF] Executed DbCommand (282ms) [Parameters=[@p0='?', @p1='?' (DbType = DateTime), @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Posts" ("Caption", "CreatedAt", "UserId")
+VALUES (@p0, @p1, @p2)
+RETURNING "PostId";
+2025-06-11 23:06:43.591 +01:00 [INF] Executed DbCommand (307ms) [Parameters=[@p3='?', @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "PostImages" ("ImageUrl", "PostId")
+VALUES (@p3, @p4)
+RETURNING "PostImageId";
+INSERT INTO "PostImages" ("ImageUrl", "PostId")
+VALUES (@p5, @p6)
+RETURNING "PostImageId";
+2025-06-11 23:06:43.895 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.PostDto'.
+2025-06-11 23:06:43.914 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api) in 6813.4312ms
+2025-06-11 23:06:43.920 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.CreatePost (ChatSystem-1.Api)'
+2025-06-11 23:06:43.926 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/Posts - 200 null application/json; charset=utf-8 6865.6717ms

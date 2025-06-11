@@ -17,8 +17,7 @@ namespace ChatSystem_1.Application.Services
         private readonly Lazy<IAuthenticationService> _authenticationService;
         private readonly Lazy<IPhotoService> _photoService;
         private readonly Lazy<IUserProfileService> _userProfileService;
-
-
+        private readonly Lazy<IPostService> _postService;
         public ServiceManager
         (
             ILoggerManager logger,
@@ -33,9 +32,11 @@ namespace ChatSystem_1.Application.Services
                 new AuthenticationService(logger, mapper, userManager, configuration));
             _photoService = new Lazy<IPhotoService>(() => new PhotoService(cloudinary));
             _userProfileService = new Lazy<IUserProfileService>(() => new UserProfileService(repositoryManager, logger, mapper, PhotoService));
+            _postService = new Lazy<IPostService>(() => new PostService(repositoryManager, logger, mapper, PhotoService));
         }
         public IAuthenticationService AuthenticationService => _authenticationService.Value;
         public IPhotoService PhotoService => _photoService.Value;
         public IUserProfileService UserProfileService => _userProfileService.Value;
+        public IPostService PostService => _postService.Value;
     }
 }

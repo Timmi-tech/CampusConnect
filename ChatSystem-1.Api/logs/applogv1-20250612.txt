@@ -1,0 +1,129 @@
+2025-06-12 00:00:42.590 +01:00 [INF] Application is shutting down...
+2025-06-12 00:07:10.023 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-12 00:07:10.328 +01:00 [INF] Now listening on: http://localhost:5199
+2025-06-12 00:07:10.341 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-12 00:07:10.349 +01:00 [INF] Hosting environment: Development
+2025-06-12 00:07:10.356 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\ChatSystemm\Chatsystem-1.api
+2025-06-12 00:08:24.544 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-12 00:08:24.852 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html?url=http://localhost:5199/swagger/v1/swagger.json - 200 null text/html;charset=utf-8 310.9978ms
+2025-06-12 00:08:25.027 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.js - null null
+2025-06-12 00:08:25.062 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.js - 200 null application/javascript;charset=utf-8 34.6792ms
+2025-06-12 00:08:26.407 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2025-06-12 00:08:26.833 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 425.5782ms
+2025-06-12 00:08:43.923 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Posts - null null
+2025-06-12 00:08:43.948 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-06-12 00:08:44.082 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-06-12 00:08:44.100 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-06-12 00:08:44.110 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Posts - 401 0 null 186.6068ms
+2025-06-12 00:09:06.537 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/authentication/login - application/json 56
+2025-06-12 00:09:06.555 +01:00 [INF] CORS policy execution successful.
+2025-06-12 00:09:06.578 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-12 00:09:06.644 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(ChatSystem_1.Application.DTOs.UserForAuthenticationDto) on controller ChatSystem_1.Api.Controllers.AuthenticationController (ChatSystem-1.Api).
+2025-06-12 00:09:14.530 +01:00 [INF] Executed DbCommand (529ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-12 00:09:15.673 +01:00 [INF] Executed DbCommand (301ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-06-12 00:09:16.066 +01:00 [INF] Executed DbCommand (312ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-06-12 00:09:16.845 +01:00 [INF] Executed DbCommand (408ms) [Parameters=[@p20='?', @p0='?' (DbType = Int32), @p1='?', @p21='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?', @p16='?' (DbType = DateTime), @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "MatricNumber" = @p8, "NormalizedEmail" = @p9, "NormalizedUserName" = @p10, "PasswordHash" = @p11, "PhoneNumber" = @p12, "PhoneNumberConfirmed" = @p13, "ProfileImageUrl" = @p14, "RefreshToken" = @p15, "RefreshTokenExpiryTime" = @p16, "SecurityStamp" = @p17, "TwoFactorEnabled" = @p18, "UserName" = @p19
+WHERE "Id" = @p20 AND "ConcurrencyStamp" = @p21;
+2025-06-12 00:09:16.952 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.TokenDto'.
+2025-06-12 00:09:17.032 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api) in 10356.8578ms
+2025-06-12 00:09:17.040 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.AuthenticationController.Authenticate (ChatSystem-1.Api)'
+2025-06-12 00:09:17.074 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/authentication/login - 200 null application/json; charset=utf-8 10536.7823ms
+2025-06-12 00:09:32.085 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Posts - null null
+2025-06-12 00:09:32.253 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetAllPosts (ChatSystem-1.Api)'
+2025-06-12 00:09:32.270 +01:00 [INF] Route matched with {action = "GetAllPosts", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPosts() on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-12 00:09:32.986 +01:00 [INF] Executed DbCommand (291ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PostId", p."Caption", p."CreatedAt", p."UserId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", p0."PostImageId", p0."ImageUrl", p0."PostId"
+FROM "Posts" AS p
+INNER JOIN "AspNetUsers" AS a ON p."UserId" = a."Id"
+LEFT JOIN "PostImages" AS p0 ON p."PostId" = p0."PostId"
+ORDER BY p."CreatedAt" DESC, p."PostId", a."Id"
+2025-06-12 00:09:33.056 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatSystem_1.Application.DTOs.PostDto, ChatSystem-1.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 00:09:33.100 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.GetAllPosts (ChatSystem-1.Api) in 813.083ms
+2025-06-12 00:09:33.110 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetAllPosts (ChatSystem-1.Api)'
+2025-06-12 00:09:33.120 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Posts - 200 null application/json; charset=utf-8 1034.7419ms
+2025-06-12 00:10:09.982 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Posts/3 - null null
+2025-06-12 00:10:10.001 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetPostById (ChatSystem-1.Api)'
+2025-06-12 00:10:10.044 +01:00 [INF] Route matched with {action = "GetPostById", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPostById(Int32) on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-12 00:10:10.604 +01:00 [INF] Executed DbCommand (460ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."PostId", t."Caption", t."CreatedAt", t."UserId", t."Id", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."MatricNumber", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."ProfileImageUrl", t."RefreshToken", t."RefreshTokenExpiryTime", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", p0."PostImageId", p0."ImageUrl", p0."PostId"
+FROM (
+    SELECT p."PostId", p."Caption", p."CreatedAt", p."UserId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Posts" AS p
+    INNER JOIN "AspNetUsers" AS a ON p."UserId" = a."Id"
+    WHERE p."PostId" = @__postId_0
+    LIMIT 1
+) AS t
+LEFT JOIN "PostImages" AS p0 ON t."PostId" = p0."PostId"
+ORDER BY t."PostId", t."Id"
+2025-06-12 00:10:10.629 +01:00 [INF] Executing OkObjectResult, writing value of type 'ChatSystem_1.Application.DTOs.PostDto'.
+2025-06-12 00:10:10.638 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.GetPostById (ChatSystem-1.Api) in 584.6313ms
+2025-06-12 00:10:10.652 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetPostById (ChatSystem-1.Api)'
+2025-06-12 00:10:10.658 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Posts/3 - 200 null application/json; charset=utf-8 676.1975ms
+2025-06-12 00:10:22.305 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Posts/me - null null
+2025-06-12 00:10:22.324 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetMyPosts (ChatSystem-1.Api)'
+2025-06-12 00:10:22.355 +01:00 [INF] Route matched with {action = "GetMyPosts", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyPosts() on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-12 00:10:22.791 +01:00 [INF] Executed DbCommand (362ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PostId", p."Caption", p."CreatedAt", p."UserId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", p0."PostImageId", p0."ImageUrl", p0."PostId"
+FROM "Posts" AS p
+INNER JOIN "AspNetUsers" AS a ON p."UserId" = a."Id"
+LEFT JOIN "PostImages" AS p0 ON p."PostId" = p0."PostId"
+WHERE p."UserId" = @__userId_0
+ORDER BY p."CreatedAt" DESC, p."PostId", a."Id"
+2025-06-12 00:10:22.805 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatSystem_1.Application.DTOs.PostDto, ChatSystem-1.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 00:10:22.815 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.GetMyPosts (ChatSystem-1.Api) in 434.3854ms
+2025-06-12 00:10:22.826 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetMyPosts (ChatSystem-1.Api)'
+2025-06-12 00:10:22.836 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Posts/me - 200 null application/json; charset=utf-8 530.9809ms
+2025-06-12 00:10:41.514 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5199/api/Posts/3 - null null
+2025-06-12 00:10:41.532 +01:00 [INF] CORS policy execution successful.
+2025-06-12 00:10:41.540 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.DeletePost (ChatSystem-1.Api)'
+2025-06-12 00:10:41.560 +01:00 [INF] Route matched with {action = "DeletePost", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeletePost(Int32) on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-12 00:10:41.870 +01:00 [INF] Executed DbCommand (288ms) [Parameters=[@__postId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."PostId", t."Caption", t."CreatedAt", t."UserId", t."Id", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."MatricNumber", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."ProfileImageUrl", t."RefreshToken", t."RefreshTokenExpiryTime", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", p0."PostImageId", p0."ImageUrl", p0."PostId"
+FROM (
+    SELECT p."PostId", p."Caption", p."CreatedAt", p."UserId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Posts" AS p
+    INNER JOIN "AspNetUsers" AS a ON p."UserId" = a."Id"
+    WHERE p."PostId" = @__postId_0
+    LIMIT 1
+) AS t
+LEFT JOIN "PostImages" AS p0 ON t."PostId" = p0."PostId"
+ORDER BY t."PostId", t."Id"
+2025-06-12 00:10:42.402 +01:00 [INF] Executed DbCommand (303ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "PostImages"
+WHERE "PostImageId" = @p0;
+DELETE FROM "PostImages"
+WHERE "PostImageId" = @p1;
+DELETE FROM "Posts"
+WHERE "PostId" = @p2;
+2025-06-12 00:10:42.883 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-06-12 00:10:42.897 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.DeletePost (ChatSystem-1.Api) in 1325.2058ms
+2025-06-12 00:10:42.919 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.DeletePost (ChatSystem-1.Api)'
+2025-06-12 00:10:42.939 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5199/api/Posts/3 - 204 null null 1424.4898ms
+2025-06-12 00:10:50.502 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Posts - null null
+2025-06-12 00:10:50.519 +01:00 [INF] Executing endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetAllPosts (ChatSystem-1.Api)'
+2025-06-12 00:10:50.528 +01:00 [INF] Route matched with {action = "GetAllPosts", controller = "PostControllers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPosts() on controller ChatSystem_1.Api.Controllers.PostControllers (ChatSystem-1.Api).
+2025-06-12 00:10:50.852 +01:00 [INF] Executed DbCommand (308ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."PostId", p."Caption", p."CreatedAt", p."UserId", a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."MatricNumber", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."ProfileImageUrl", a."RefreshToken", a."RefreshTokenExpiryTime", a."SecurityStamp", a."TwoFactorEnabled", a."UserName", p0."PostImageId", p0."ImageUrl", p0."PostId"
+FROM "Posts" AS p
+INNER JOIN "AspNetUsers" AS a ON p."UserId" = a."Id"
+LEFT JOIN "PostImages" AS p0 ON p."PostId" = p0."PostId"
+ORDER BY p."CreatedAt" DESC, p."PostId", a."Id"
+2025-06-12 00:10:50.899 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ChatSystem_1.Application.DTOs.PostDto, ChatSystem-1.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-12 00:10:51.506 +01:00 [INF] Executed action ChatSystem_1.Api.Controllers.PostControllers.GetAllPosts (ChatSystem-1.Api) in 963.4683ms
+2025-06-12 00:10:51.566 +01:00 [INF] Executed endpoint 'ChatSystem_1.Api.Controllers.PostControllers.GetAllPosts (ChatSystem-1.Api)'
+2025-06-12 00:10:51.822 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Posts - 200 null application/json; charset=utf-8 1320.023ms
+2025-06-12 00:13:23.190 +01:00 [INF] Application is shutting down...

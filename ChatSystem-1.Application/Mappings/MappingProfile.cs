@@ -25,6 +25,14 @@ namespace ChatSystem_1.Application.Mappings
 
             CreateMap<UserUpdateProfileDto, User>()
                 .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+
+            CreateMap<CreatePostDto, Post>();
+            CreateMap<Post, PostDto>()
+                .ForMember(dest => dest.ImageUrls,
+                    opt => opt.MapFrom(src => src.PostImages.Select(pi => pi.ImageUrl).ToList()));
+            CreateMap<UpdatePostDto, Post>()
+                .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+
         }
     }
 }

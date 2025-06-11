@@ -4,7 +4,7 @@ using ChatSystem_1.Domain.Entities.Models;
 
 public class RepositoryContext : IdentityDbContext<User>
 {
-    public RepositoryContext(DbContextOptions options) 
+    public RepositoryContext(DbContextOptions options)
     : base(options)
     {
     }
@@ -14,5 +14,7 @@ public class RepositoryContext : IdentityDbContext<User>
         base.OnModelCreating(modelBuilder);
         // Add any additional configuration here
     }
+    public DbSet<Post> Posts { get; set; } = null!;
+    public DbSet<PostImage> PostImages { get; set; } = null!;
 
 }
